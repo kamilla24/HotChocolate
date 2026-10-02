@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu — BasoKita</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍲</text></svg>">
+</head>
+<body>
+<div class="topbar" data-i18n="topbar">Fresh dibuat setiap hari • Halal • Mulai Rp15.000</div>
+<nav class="nav"><div class="nav-inner">
+<a class="brand" href="index.html"><div class="brand-mark">🍲</div><span>Baso<em>Kita</em></span></a>
+<button class="hamburger">☰</button>
+<div class="nav-links">
+<a href="index.html" data-i18n="nav_home">Beranda</a>
+<a href="menu.html" class="active" data-i18n="nav_menu">Katalog / Menu</a>
+<a href="about.html" data-i18n="nav_about">Tentang Kami</a>
+<a href="contact.html" data-i18n="nav_contact">Kontak</a>
+<div class="lang"><button data-lang="id">🇮🇩 ID</button><button data-lang="en">🇬🇧 EN</button></div>
+<a href="https://wa.me/6281234567890?text=Halo%20BasoKita!%20Saya%20mau%20pesan." target="_blank" class="btn btn-primary btn-sm" data-i18n="nav_order">Pesan Sekarang</a>
+</div></div></nav>
+
+<section class="section section-cream" style="padding:48px 0"><div class="container" style="text-align:center">
+<div class="kicker" data-i18n="menu_kicker">Katalog Kami</div>
+<h1 style="font-size:clamp(2rem,4vw,3rem);margin:8px 0" data-i18n="menu_title">Menu BasoKita</h1>
+<p style="color:var(--muted)" data-i18n="menu_desc">Semua bakso dibuat fresh setiap hari. Pilih favoritmu!</p>
+</div></section>
+
+<section class="section"><div class="container">
+<div class="filters">
+<button class="active" data-filter="all" data-i18n="f_all">All</button>
+<button data-filter="original" data-i18n="f_original">Original</button>
+<button data-filter="spicy" data-i18n="f_spicy">Spicy</button>
+<button data-filter="special" data-i18n="f_special">Special</button>
+<button data-filter="best" data-i18n="f_best">Best Seller</button>
+</div>
+<div class="menu-grid">
+<div class="card reveal" data-cat="original best"><img class="product-img" src="https://images.unsplash.com/photo-1547592166-23ac45744acd?q=80&w=800&auto=format&fit=crop" alt="Bakso Original"><div class="card-body"><span class="badge green">Best Seller</span><h3>Bakso Original / Original Bakso</h3><p style="color:var(--muted);font-size:.93rem" data-i18n="p1_d"></p><div class="product-meta"><span class="price">Rp15.000</span><button class="btn btn-primary btn-sm" onclick="orderWA('Bakso Original')" data-i18n="order_now">Pesan Sekarang</button></div></div></div>
+<div class="card reveal" data-cat="original"><img class="product-img" src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?q=80&w=800&auto=format&fit=crop" alt="Bakso Urat"><div class="card-body"><span class="badge cream">Favorite</span><h3>Bakso Urat / Tendon Bakso</h3><p style="color:var(--muted);font-size:.93rem" data-i18n="p2_d"></p><div class="product-meta"><span class="price">Rp18.000</span><button class="btn btn-primary btn-sm" onclick="orderWA('Bakso Urat')" data-i18n="order_now">Pesan Sekarang</button></div></div></div>
+<div class="card reveal" data-cat="spicy best"><img class="product-img" src="https://images.unsplash.com/photo-1585032226651-759b368d7246?q=80&w=800&auto=format&fit=crop" alt="Bakso Mercon"><div class="card-body"><span class="badge red">Best Seller • Spicy</span><h3>Bakso Mercon / Spicy Fire Bakso</h3><p style="color:var(--muted);font-size:.93rem" data-i18n="p3_d"></p><div class="product-meta"><span class="price">Rp20.000</span><button class="btn btn-primary btn-sm" onclick="orderWA('Bakso Mercon')" data-i18n="order_now">Pesan Sekarang</button></div></div></div>
+<div class="card reveal" data-cat="special"><img class="product-img" src="https://images.unsplash.com/photo-1529042410759-befb1204b468?q=80&w=800&auto=format&fit=crop" alt="Bakso Keju"><div class="card-body"><span class="badge orange">Favorite • Cheese</span><h3>Bakso Keju / Cheese Bakso</h3><p style="color:var(--muted);font-size:.93rem" data-i18n="p4_d"></p><div class="product-meta"><span class="price">Rp20.000</span><button class="btn btn-primary btn-sm" onclick="orderWA('Bakso Keju')" data-i18n="order_now">Pesan Sekarang</button></div></div></div>
+<div class="card reveal" data-cat="special"><img class="product-img" src="https://images.unsplash.com/photo-1552611052-33e04de081de?q=80&w=800&auto=format&fit=crop" alt="Bakso Jumbo"><div class="card-body"><span class="badge cream">Special • Jumbo</span><h3>Bakso Jumbo / Jumbo Bakso</h3><p style="color:var(--muted);font-size:.93rem" data-i18n="p5_d"></p><div class="product-meta"><span class="price">Rp22.000</span><button class="btn btn-primary btn-sm" onclick="orderWA('Bakso Jumbo')" data-i18n="order_now">Pesan Sekarang</button></div></div></div>
+<div class="card reveal" data-cat="special best"><img class="product-img" src="https://images.unsplash.com/photo-1547592180-85f173990554?q=80&w=800&auto=format&fit=crop" alt="Bakso Komplit"><div class="card-body"><span class="badge green">Best Seller</span><h3>Bakso Komplit / Complete Bakso</h3><p style="color:var(--muted);font-size:.93rem" data-i18n="p6_d"></p><div class="product-meta"><span class="price">Rp25.000</span><button class="btn btn-primary btn-sm" onclick="orderWA('Bakso Komplit')" data-i18n="order_now">Pesan Sekarang</button></div></div></div>
+</div>
+</div></section>
+
+<footer><div class="container footer-grid">
+<div><a class="brand" href="index.html" style="color:#fff"><div class="brand-mark">🍲</div><span>Baso<em>Kita</em></span></a><p style="color:#D9C6A8;font-size:.93rem;margin-top:12px" data-i18n="foot_desc"></p></div>
+<div><h4 data-i18n="foot_links">Tautan Cepat</h4><a href="index.html">Home</a><a href="menu.html">Catalog / Menu</a><a href="about.html">About Us</a><a href="contact.html">Contact</a></div>
+<div><h4 data-i18n="foot_contact">Kontak</h4><a href="#">Jl. Contoh No. 123, Depok</a><a href="#">+62 812-3456-7890</a><a href="#">hello@basokita.com</a><a href="#">@basokita.id</a></div>
+<div><h4 data-i18n="foot_hours">Jam Buka</h4><p style="color:#D9C6A8;white-space:pre-line" data-i18n="foot_hours_t"></p></div>
+</div><div class="copy" data-i18n="foot_copy"></div></footer>
+<a class="wa-float" href="https://wa.me/6281234567890" target="_blank">💬</a>
+<script src="js/app.js"></script>
+</body>
+</html>

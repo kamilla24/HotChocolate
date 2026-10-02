@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BasoKita — Bakso Hangat, Rasa yang Bikin Nagih!</title>
+<meta name="description" content="BasoKita — bakso khas Indonesia, fresh setiap hari.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍲</text></svg>">
+</head>
+<body>
+<div class="topbar" data-i18n="topbar">Fresh dibuat setiap hari • Halal • Mulai Rp15.000</div>
+<nav class="nav"><div class="nav-inner">
+  <a class="brand" href="index.html"><div class="brand-mark">🍲</div><span>Baso<em>Kita</em></span></a>
+  <button class="hamburger">☰</button>
+  <div class="nav-links">
+    <a href="index.html" class="active" data-i18n="nav_home">Beranda</a>
+    <a href="menu.html" data-i18n="nav_menu">Katalog / Menu</a>
+    <a href="about.html" data-i18n="nav_about">Tentang Kami</a>
+    <a href="contact.html" data-i18n="nav_contact">Kontak</a>
+    <div class="lang"><button data-lang="id">🇮🇩 ID</button><button data-lang="en">🇬🇧 EN</button></div>
+    <a href="https://wa.me/6281234567890?text=Halo%20BasoKita!%20Saya%20mau%20pesan." target="_blank" class="btn btn-primary btn-sm" data-i18n="nav_order">Pesan Sekarang</a>
+  </div>
+</div></nav>
+
+<header class="hero"><div class="container hero-grid">
+  <div>
+    <span class="eyebrow" data-i18n="hero_badge">🔥 Bakso Khas Indonesia • Sejak 2018</span>
+    <h1 data-i18n="hero_title">Bakso Hangat, Rasa yang Bikin Nagih!</h1>
+    <p class="lead" data-i18n="hero_desc">Nikmati bakso berkualitas dengan cita rasa khas Indonesia, dibuat fresh setiap hari.</p>
+    <div class="hero-cta">
+      <a href="menu.html" class="btn btn-ghost" data-i18n="hero_menu">Lihat Menu</a>
+      <a href="https://wa.me/6281234567890?text=Halo%20BasoKita!%20Saya%20mau%20pesan." target="_blank" class="btn btn-primary" data-i18n="hero_order">Pesan Sekarang</a>
+    </div>
+    <div class="hero-stats">
+      <div><strong data-i18n="hero_stat1_n">25K+</strong><span data-i18n="hero_stat1_t">Mangkok Terjual</span></div>
+      <div><strong data-i18n="hero_stat2_n">4.9★</strong><span data-i18n="hero_stat2_t">Rating Pelanggan</span></div>
+      <div><strong data-i18n="hero_stat3_n">100%</strong><span data-i18n="hero_stat3_t">Daging Sapi Asli</span></div>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <img class="hero-img-main" src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?q=80&w=900&auto=format&fit=crop" alt="Semangkuk bakso hangat BasoKita">
+    <div class="float-card fc1"><div class="dot" style="background:#FDECEA">🏆</div><div><strong data-i18n="float1_t">Best Seller</strong><span data-i18n="float1_s">Bakso Komplit • Rp25rb</span></div></div>
+    <div class="float-card fc2"><div class="dot" style="background:#E8F5E9">🌿</div><div><strong data-i18n="float2_t">Fresh Setiap Hari</strong><span data-i18n="float2_s">Tanpa pengawet</span></div></div>
+  </div>
+</div></header>
+
+<section class="section"><div class="container">
+  <div class="section-title reveal"><div class="kicker" data-i18n="best_kicker">Menu Andalan</div>
+    <h2 data-i18n="best_title">Best Seller Kami</h2>
+    <p data-i18n="best_desc">Paling sering dipesan dan paling banyak direview bintang 5.</p></div>
+  <div class="grid-3">
+    <div class="card reveal"><img class="product-img" src="https://images.unsplash.com/photo-1585032226651-759b368d7246?q=80&w=800&auto=format&fit=crop" alt="Bakso Mercon">
+      <div class="card-body"><span class="badge red">Best Seller • Spicy</span><h3>Bakso Mercon / Spicy Fire Bakso</h3>
+      <p style="color:var(--muted);font-size:.93rem" data-i18n="p3_d">Bakso dengan isian cabai pedas yang cocok untuk pecinta makanan pedas.</p>
+      <div class="product-meta"><span class="price">Rp20.000</span><button class="btn btn-primary btn-sm" onclick="orderWA('Bakso Mercon')" data-i18n="best_order">Pesan</button></div></div></div>
+    <div class="card reveal"><img class="product-img" src="https://images.unsplash.com/photo-1547592166-23ac45744acd?q=80&w=800&auto=format&fit=crop" alt="Bakso Original">
+      <div class="card-body"><span class="badge green">Best Seller</span><h3>Bakso Original / Original Bakso</h3>
+      <p style="color:var(--muted);font-size:.93rem" data-i18n="p1_d">Bakso sapi dengan kuah kaldu gurih dan cita rasa klasik.</p>
+      <div class="product-meta"><span class="price">Rp15.000</span><button class="btn btn-primary btn-sm" onclick="orderWA('Bakso Original')" data-i18n="best_order">Pesan</button></div></div></div>
+    <div class="card reveal"><img class="product-img" src="https://images.unsplash.com/photo-1547592180-85f173990554?q=80&w=800&auto=format&fit=crop" alt="Bakso Komplit">
+      <div class="card-body"><span class="badge orange">Favorite</span><h3>Bakso Komplit / Complete Bakso</h3>
+      <p style="color:var(--muted);font-size:.93rem" data-i18n="p6_d">Bakso lengkap dengan mie, tahu, sayuran, dan pelengkap lainnya.</p>
+      <div class="product-meta"><span class="price">Rp25.000</span><button class="btn btn-primary btn-sm" onclick="orderWA('Bakso Komplit')" data-i18n="best_order">Pesan</button></div></div></div>
+  </div>
+  <div style="text-align:center;margin-top:26px"><a href="menu.html" class="btn btn-ghost" data-i18n="best_all">Lihat Semua Menu</a></div>
+</div></section>
+
+<section class="section section-cream"><div class="container">
+  <div class="section-title reveal"><div class="kicker" data-i18n="why_kicker">Kenapa BasoKita?</div>
+    <h2 data-i18n="why_title">Mengapa Memilih Kami</h2><p data-i18n="why_desc">Kami serius soal rasa, bahan, dan kebersihan.</p></div>
+  <div class="grid-4">
+    <div class="card reveal"><div class="card-body"><div class="why-icon" style="background:#E8F5E9">🥬</div><h3 data-i18n="why1_t">Fresh Ingredients</h3><p style="color:var(--muted);font-size:.93rem" data-i18n="why1_d">Bahan segar pilihan setiap pagi dari supplier terpercaya.</p></div></div>
+    <div class="card reveal"><div class="card-body"><div class="why-icon" style="background:#FDECEA">🍲</div><h3 data-i18n="why2_t">Authentic Indonesian Taste</h3><p style="color:var(--muted);font-size:.93rem" data-i18n="why2_d">Resep keluarga dengan kaldu sapi gurih yang autentik.</p></div></div>
+    <div class="card reveal"><div class="card-body"><div class="why-icon" style="background:#FFF1D6">💰</div><h3 data-i18n="why3_t">Affordable Price</h3><p style="color:var(--muted);font-size:.93rem" data-i18n="why3_d">Mulai Rp15.000, kenyang maksimal tanpa bikin kantong bolong.</p></div></div>
+    <div class="card reveal"><div class="card-body"><div class="why-icon" style="background:#E3F2FD">👨‍🍳</div><h3 data-i18n="why4_t">Freshly Made</h3><p style="color:var(--muted);font-size:.93rem" data-i18n="why4_d">Adonan dan kuah dibuat fresh setiap hari, tanpa pengawet.</p></div></div>
+  </div>
+</div></section>
+
+<section class="section"><div class="container">
+  <div class="section-title reveal"><div class="kicker" data-i18n="rev_kicker">Kata Mereka</div><h2 data-i18n="rev_title">Customer Reviews</h2><p data-i18n="rev_desc">Cerita jujur dari pecinta bakso.</p></div>
+  <div class="reviews">
+    <div class="card reveal"><div class="card-body"><div class="stars">★★★★★</div><p>"Kuahnya gurih banget, bakso merconnya nampol! Langganan tiap minggu."</p><div style="display:flex;gap:10px;align-items:center;margin-top:12px"><img class="avatar" src="https://i.pravatar.cc/100?img=32" alt="Rina"><div><strong>Rina P.</strong><br><small style="color:var(--muted)">Depok</small></div></div></div></div>
+    <div class="card reveal"><div class="card-body"><div class="stars">★★★★★</div><p>"Bakso kejunya creamy, anak-anak suka banget. Porsi pas, harga bersahabat."</p><div style="display:flex;gap:10px;align-items:center;margin-top:12px"><img class="avatar" src="https://i.pravatar.cc/100?img=12" alt="Andi"><div><strong>Andi W.</strong><br><small style="color:var(--muted)">Jakarta</small></div></div></div></div>
+    <div class="card reveal"><div class="card-body"><div class="stars">★★★★★</div><p>"Komplit isinya banyak, mie + tahu + sayur. Hangat sampai rumah, recommended!"</p><div style="display:flex;gap:10px;align-items:center;margin-top:12px"><img class="avatar" src="https://i.pravatar.cc/100?img=47" alt="Sari"><div><strong>Sari D.</strong><br><small style="color:var(--muted)">Bogor</small></div></div></div></div>
+  </div>
+</div></section>
+
+<section class="section" style="padding-top:0"><div class="container">
+  <div class="cta-band reveal"><h2 data-i18n="cta_title">Siap menikmati semangkuk bakso favoritmu?</h2>
+  <p data-i18n="cta_desc">Pesan sekarang via WhatsApp, diantar hangat sampai depan pintu.</p>
+  <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+    <a class="btn btn-green" href="https://wa.me/6281234567890?text=Halo%20BasoKita!%20Saya%20mau%20pesan." target="_blank" data-i18n="cta_btn1">Pesan via WhatsApp</a>
+    <a class="btn btn-ghost" href="menu.html" style="background:#fff" data-i18n="cta_btn2">Lihat Menu</a>
+  </div></div>
+</div></section>
+
+<footer><div class="container footer-grid">
+  <div><a class="brand" href="index.html" style="color:#fff"><div class="brand-mark">🍲</div><span>Baso<em>Kita</em></span></a>
+    <p style="color:#D9C6A8;font-size:.93rem;margin-top:12px" data-i18n="foot_desc">Bakso khas Indonesia dengan bahan berkualitas, rasa autentik, dan harga terjangkau.</p>
+    <div class="social"><a href="#">📸</a><a href="#">🎵</a><a href="#">✉️</a><a href="#">💬</a></div></div>
+  <div><h4 data-i18n="foot_links">Tautan Cepat</h4><a href="index.html">Home</a><a href="menu.html">Catalog / Menu</a><a href="about.html">About Us</a><a href="contact.html">Contact</a></div>
+  <div><h4 data-i18n="foot_contact">Kontak</h4><a href="#">Jl. Contoh No. 123, Depok</a><a href="#">+62 812-3456-7890</a><a href="#">hello@basokita.com</a><a href="#">@basokita.id</a></div>
+  <div><h4 data-i18n="foot_hours">Jam Buka</h4><p style="color:#D9C6A8;white-space:pre-line" data-i18n="foot_hours_t">Senin – Minggu
+10.00 – 22.00 WIB</p></div>
+</div><div class="copy" data-i18n="foot_copy">© 2026 BasoKita. All Rights Reserved.</div></footer>
+<a class="wa-float" href="https://wa.me/6281234567890?text=Halo%20BasoKita!%20Saya%20mau%20pesan." target="_blank">💬</a>
+<script src="js/app.js"></script>
+</body>
+</html>

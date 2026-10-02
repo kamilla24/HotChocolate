@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kontak — BasoKita</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍲</text></svg>">
+</head>
+<body>
+<div class="topbar" data-i18n="topbar"></div>
+<nav class="nav"><div class="nav-inner">
+<a class="brand" href="index.html"><div class="brand-mark">🍲</div><span>Baso<em>Kita</em></span></a>
+<button class="hamburger">☰</button>
+<div class="nav-links">
+<a href="index.html" data-i18n="nav_home">Beranda</a>
+<a href="menu.html" data-i18n="nav_menu">Katalog / Menu</a>
+<a href="about.html" data-i18n="nav_about">Tentang Kami</a>
+<a href="contact.html" class="active" data-i18n="nav_contact">Kontak</a>
+<div class="lang"><button data-lang="id">🇮🇩 ID</button><button data-lang="en">🇬🇧 EN</button></div>
+<a href="https://wa.me/6281234567890?text=Halo%20BasoKita!%20Saya%20mau%20pesan." target="_blank" class="btn btn-primary btn-sm" data-i18n="nav_order">Pesan Sekarang</a>
+</div></div></nav>
+
+<section class="section section-cream" style="padding:48px 0"><div class="container" style="text-align:center">
+<div class="kicker" data-i18n="contact_kicker">Hubungi Kami</div>
+<h1 style="font-size:clamp(2rem,4vw,3rem);margin:8px 0" data-i18n="contact_title">Contact Us</h1>
+<p style="color:var(--muted)" data-i18n="contact_desc"></p>
+</div></section>
+
+<section class="section"><div class="container contact-grid">
+<div class="info-card reveal">
+<div class="info-row"><div class="ic">📍</div><div><strong data-i18n="addr_t">Alamat</strong><br><span data-i18n="addr_v"></span></div></div>
+<div class="info-row"><div class="ic">💬</div><div><strong data-i18n="wa_t">WhatsApp</strong><br><a href="https://wa.me/6281234567890" target="_blank" style="color:var(--red);font-weight:700">+62 812-3456-7890</a></div></div>
+<div class="info-row"><div class="ic">✉️</div><div><strong data-i18n="email_t">Email</strong><br><a href="mailto:hello@basokita.com" style="color:var(--red);font-weight:700">hello@basokita.com</a></div></div>
+<div class="info-row"><div class="ic">📸</div><div><strong data-i18n="ig_t">Instagram</strong><br><a href="#" style="color:var(--red);font-weight:700">@basokita.id</a></div></div>
+<div class="info-row"><div class="ic">🕙</div><div><strong data-i18n="hours_t">Jam Operasional</strong><br><span style="white-space:pre-line" data-i18n="hours_v"></span></div></div>
+</div>
+<form class="contact-form reveal" id="contactForm">
+<h3 style="margin-top:0" data-i18n="form_t">Kirim Pesan</h3>
+<div class="field"><label data-i18n="f_name">Name / Nama</label><input required data-i18n-ph="f_ph_name" placeholder="Nama lengkap"></div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+<div class="field"><label data-i18n="f_email">Email</label><input type="email" required placeholder="nama@email.com"></div>
+<div class="field"><label data-i18n="f_phone">Phone Number / Nomor Telepon</label><input data-i18n-ph="f_ph_phone" placeholder="+62 ..."></div>
+</div>
+<div class="field"><label data-i18n="f_subject">Subject / Subjek</label><input data-i18n-ph="f_ph_subject" placeholder="Contoh: Pesanan catering"></div>
+<div class="field"><label data-i18n="f_msg">Message / Pesan</label><textarea rows="5" required data-i18n-ph="f_ph_msg" placeholder="Tulis pesanmu di sini..."></textarea></div>
+<button class="btn btn-primary" type="submit" style="width:100%" data-i18n="f_send">Kirim Pesan</button>
+</form>
+</div>
+<div class="container"><div class="map reveal"><div><strong data-i18n="map_t">📍 Lokasi Kami — Google Maps</strong><p data-i18n="map_d"></p>
+<iframe title="maps" src="https://www.google.com/maps?q=Depok,Jawa+Barat&output=embed" style="border:0;border-radius:14px;width:100%;max-width:900px;height:300px;margin-top:12px" loading="lazy"></iframe>
+</div></div></div>
+</section>
+
+<footer><div class="container footer-grid">
+<div><a class="brand" href="index.html" style="color:#fff"><div class="brand-mark">🍲</div><span>Baso<em>Kita</em></span></a><p style="color:#D9C6A8;font-size:.93rem;margin-top:12px" data-i18n="foot_desc"></p></div>
+<div><h4 data-i18n="foot_links"></h4><a href="index.html">Home</a><a href="menu.html">Catalog / Menu</a><a href="about.html">About Us</a><a href="contact.html">Contact</a></div>
+<div><h4 data-i18n="foot_contact"></h4><a href="#">Jl. Contoh No. 123, Depok</a><a href="#">+62 812-3456-7890</a><a href="#">hello@basokita.com</a><a href="#">@basokita.id</a></div>
+<div><h4 data-i18n="foot_hours"></h4><p style="color:#D9C6A8;white-space:pre-line" data-i18n="foot_hours_t"></p></div>
+</div><div class="copy" data-i18n="foot_copy"></div></footer>
+<div class="toast" id="toast"></div>
+<a class="wa-float" href="https://wa.me/6281234567890" target="_blank">💬</a>
+<script src="js/app.js"></script>
+</body>
+</html>
